@@ -45,7 +45,7 @@ const showOrders = () => {
 
 const showMain = () => {
   let str = `
-  <div class="container">
+  <div class="container-fluid">
       <div class="header">
         <h1>My Store</h1>
         <div class='menu'>
@@ -183,7 +183,7 @@ const showProducts = () => {
       let str = "<div class='row'>";
       products.map((value) => {
         str += `
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 mt-4">
             <div class="card">
               <img src="${value.image}" class="card-img-top" alt="${value.name}">
               <div class="card-body">
@@ -194,7 +194,7 @@ const showProducts = () => {
               </div>
             </div>
           </div>
-          `;
+        `;
       });
       divProducts.innerHTML = str + "</div>";
     });

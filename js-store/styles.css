@@ -17,7 +17,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 50px;
+      transition: transform 0.3s;
   
   }
   .box {
@@ -69,4 +69,10 @@
   .menu li {
       display: inline-block;
       padding: 5px;
+  }
+  .card{
+    transition: transform 0.5s;
+  }
+  .card:hover{
+    transform: scale(1.1);
   }
